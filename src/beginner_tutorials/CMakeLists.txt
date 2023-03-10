@@ -206,7 +206,10 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+<<<<<<< HEAD
 
 catkin_install_python(PROGRAMS scripts/talker.py scripts/listener.py scripts/add_two_ints_server.py scripts/add_two_ints_client.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+=======
+>>>>>>> 5873dfe07379dffd343b42958673be9eed2db37f
