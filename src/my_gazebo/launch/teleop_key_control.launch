@@ -1,0 +1,5 @@
+<launch>
+  <remap from="/cmd_vel" to="/turtle1/cmd_vel"/>
+  <node name="teleop_key_control" pkg="my_gazebo" type="r2d2_teleop_key.py" output="screen"/>
+</launch>
+

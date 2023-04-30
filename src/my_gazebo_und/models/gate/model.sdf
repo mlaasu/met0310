@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="gate">
+    <!-- Left Cylinder -->
+    <link name="left_cylinder">
+      <pose>-1 0 0.75 0 0 0</pose>
+      <collision name="left_cylinder_collision">
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>1.5</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="left_cylinder_visual">
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>1.5</length>
+          </cylinder>
+        </geometry>
+      </visual>
+    </link>
+
+    <!-- Right Cylinder -->
+    <link name="right_cylinder">
+      <pose>1 0 0.75 0 0 0</pose>
+      <collision name="right_cylinder_collision">
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>1.5</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="right_cylinder_visual">
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>1.5</length>
+          </cylinder>
+        </geometry>
+      </visual>
+    </link>
+
+    <!-- Left Door -->
+    <link name="left_door">
+      <pose>-0.425 0 0.75 0 0 -1.2217</pose>
+      <collision name="left_door_collision">
+        <geometry>
+          <box>
+            <size>1.5 0.1 1</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="left_door_visual">
+        <geometry>
+          <box>
+            <size>1.5 0.1 1</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+
+    <!-- Right Door -->
+    <link name="right_door">
+      <pose>0.425 0 0.75 0 0 1.2217</pose>
+      <collision name="right_door_collision">
+        <geometry>
+          <box>
+            <size>1.5 0.1 1</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="right_door_visual">
+        <geometry>
+          <box>
+            <size>1.5 0.1 1</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
+
