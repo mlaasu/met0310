@@ -218,6 +218,7 @@
     <child link="head"/>
     <axis xyz="0 0 1"/>
     <origin xyz="0 0 ${bodylen/2}"/>
+    <dynamics damping="0.0" friction="0.9"/>
   </joint>
 
   <link name="box">
@@ -297,11 +298,7 @@
     </collision>
 
     <inertial>
-      <mass value="0.114" />
-      <origin xyz="0 0 0" />
-      <inertia ixx="0.001" ixy="0.0" ixz="0.0"
-               iyy="0.001" iyz="0.0"
-               izz="0.001" />
+	<xacro:default_inertial mass="0.1"/>
     </inertial>
   </link>
 
