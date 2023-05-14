@@ -49,12 +49,6 @@
       </ode>
     </physics>
     
-    <scene>
-      <ambient>0.4 0.4 0.4 1</ambient>
-      <background>0.7 0.7 0.7 1</background>
-      <shadows>true</shadows>
-    </scene>
-
     <gui fullscreen='0'>
       <camera name='user_camera'>
         <projection_type>orthographic</projection_type>
