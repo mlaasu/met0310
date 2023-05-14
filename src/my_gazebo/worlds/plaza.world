@@ -23,6 +23,11 @@
       <pose> 0 -0.8 0 0 0 0</pose>
     </include>
 
+    <!-- Load world -->
+    <include>
+      <uri>model://my_plaza</uri>
+    </include>
+
     <physics type="ode">
       <real_time_update_rate>1000.0</real_time_update_rate>
       <max_step_size>0.001</max_step_size>
@@ -44,13 +49,6 @@
       </ode>
     </physics>
     
-    <!-- Load world -->
-    <include>
-      <uri>model://my_plaza</uri>
-      <uri>model://gate</uri>
-    </include>
-    
-
     <scene>
       <ambient>0.4 0.4 0.4 1</ambient>
       <background>0.7 0.7 0.7 1</background>
